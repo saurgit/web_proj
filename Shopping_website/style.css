@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #212529;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+.cart{
+    position: relative;
+    background-color: white;
+    color: #212529;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.cartAmount{
+    color: white;
+    top: -10px;
+    right: -8px;
+    background-color: red;
+    position: absolute;
+    font-size: 16px;
+    padding: 0px 4px;
+    border-radius: 3px;
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: 223px;
+    }
+}
+
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 6px;
+}
+.item img{
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10ox;
+}
+
+.buttons{
+    display: flex;
+    gap: 4px;
+}
+i{
+    cursor: pointer;
+}
+
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+
+
+/* Style rules for cart empty pages */
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+.Homebtn,.checkout,.removeAll{
+    background-color: rgb(21,25,29);
+    color: white;
+    padding: 3px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.bi-x-lg{
+    font-weight: bold;
+}
+
+/**
+*!rules for shopping cart
+
+
+**/
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+}
+
+.cart-item{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+}
+
+.title-price-x{
+    width: 190px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-price-item{
+    background-color:black;
+    color: white;
+    padding: 3px 6px;
+
+}
+
+/**
+*!styling the checkout and clear cart button
+**/
+
+.checkout{
+    background-color: green;
+}
+
+.removeAll{
+    background-color: red;
+}

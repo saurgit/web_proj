@@ -1,0 +1,65 @@
+*{
+    background-color: rgb(147, 181, 211);
+}
+body{
+    padding: 10px;
+    margin:0;
+    min-width: 400px;
+}
+#input-el{
+    padding:8px 8px 8px 8px;
+    border-radius: 5px;
+    width:100%;
+    margin:5px 10px 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: rgb(220, 225, 202);
+}
+ul{
+    margin-top: 20px;
+    margin-left: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+li{
+    margin-top: 5px;
+}
+li a{
+    color: rgb(7, 64, 7);
+}
+#div-id{
+    
+    background-color: aqua;
+    margin: 20px 20px;
+    padding-top: 75px;
+    width:40%;
+    height:100px;
+    text-align: center;
+    /* font-weight: 20px; */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
+}
+
+#input-btn, #tab-btn{
+    border-radius: 2px;
+    margin: 5px 5px 5px 5px;
+    padding: 8px 10px;
+    background-color: green;
+    color:white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#delete-btn{
+    border-radius: 2px;
+    margin:5px 5px 5px 5px;
+    padding: 8px 10px;
+    background-color: rgb(206, 226, 240);
+    color:rgb(48, 38, 38);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
